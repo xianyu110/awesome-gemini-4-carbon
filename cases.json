@@ -9,7 +9,11 @@
     "author": "Google / Google DeepMind",
     "date": "2026-11-10",
     "source_type": "official-blog",
-    "notes": "官方上市博文中的独立演示。未提供单独试玩链接。"
+    "notes": "官方上市博文中的独立演示。未提供单独试玩链接。",
+    "image_url": "https://upload.maynor1024.live/file/1794385879738_eiffel-tower-exhibition.jpg",
+    "preview": {
+      "youtube_id": "rOVEmjfPmYk"
+    }
   },
   {
     "id": "platform-37-reconstruction",
@@ -21,7 +25,11 @@
     "author": "Google / Google DeepMind",
     "date": "2026-11-10",
     "source_type": "official-blog",
-    "notes": "数字（7 份 PDF、206 张图、906K 三角面、10 轮通宵循环）均来自同一篇官方博文。未提供单独试玩链接。"
+    "notes": "数字（7 份 PDF、206 张图、906K 三角面、10 轮通宵循环）均来自同一篇官方博文。未提供单独试玩链接。",
+    "image_url": "https://upload.maynor1024.live/file/1794385888704_platform-37-reconstruction.jpg",
+    "preview": {
+      "youtube_id": "1G2j2eA8sew"
+    }
   },
   {
     "id": "textile-visualizer",
@@ -33,7 +41,12 @@
     "author": "Google / Google DeepMind",
     "date": "2026-11-10",
     "source_type": "official-blog",
-    "notes": "补充来源：https://x.com/Google/status/2120279087314837642 （2026-11-11 06:15 Asia/Shanghai）。"
+    "notes": "补充来源：https://x.com/Google/status/2120279087314837642 （2026-11-11 06:15 Asia/Shanghai）。",
+    "image_url": "https://upload.maynor1024.live/file/1794385886461_textile-visualizer.jpg",
+    "preview": {
+      "youtube_id": "VDIMa4u9skQ",
+      "x_url": "https://x.com/Google/status/2120279087314837642"
+    }
   },
   {
     "id": "pelican-campus-quest",
@@ -48,9 +61,11 @@
     "notes": "试玩：https://aistudio.google.com/apps/bundled/pelican-campus-quest 。补充：https://x.com/Google/status/2120260356413051147 、https://x.com/sundarpichai/status/2120198811297694192 。OrcaRouter 拆解文指出试玩页可能需要 Google 登录。",
     "preview": {
       "play_url": "https://aistudio.google.com/apps/bundled/pelican-campus-quest",
-      "iframe": false,
-      "x_url": "https://x.com/Google/status/2120260356413051147"
-    }
+      "x_url": "https://x.com/Google/status/2120260356413051147",
+      "youtube_id": "dNbkThtNzS8",
+      "iframe": false
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385892899_pelican-campus-quest.jpg"
   },
   {
     "id": "gemini-merchandise-store",
@@ -65,8 +80,10 @@
     "notes": "试玩：https://aistudio.google.com/apps/bundled/gemini-supply 。商品图由 Nano Banana 2.1 生成，协调与站点构建由 Carbon 完成。",
     "preview": {
       "play_url": "https://aistudio.google.com/apps/bundled/gemini-supply",
+      "youtube_id": "Y8FA5LhXLdo",
       "iframe": false
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385891181_gemini-merchandise-store.jpg"
   },
   {
     "id": "atlantis-underwater-scene",
@@ -78,7 +95,11 @@
     "author": "Google / Google DeepMind",
     "date": "2026-11-10",
     "source_type": "official-blog",
-    "notes": "视频参考来自 Gemini Omni；场景建模与转到 Three.js 的工作在官方叙述中由 Carbon 完成。未提供单独试玩链接。"
+    "notes": "视频参考来自 Gemini Omni；场景建模与转到 Three.js 的工作在官方叙述中由 Carbon 完成。未提供单独试玩链接。",
+    "image_url": "https://upload.maynor1024.live/file/1794385887104_atlantis-underwater-scene.jpg",
+    "preview": {
+      "youtube_id": "Cxf3AVX8_7I"
+    }
   },
   {
     "id": "stein-schule-fortepiano",
@@ -93,8 +114,10 @@
     "notes": "试玩：https://aistudio.google.com/apps/bundled/koerner-hall 。",
     "preview": {
       "play_url": "https://aistudio.google.com/apps/bundled/koerner-hall",
+      "youtube_id": "Vn-gsW5Dyf8",
       "iframe": false
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385894758_stein-schule-fortepiano.jpg"
   },
   {
     "id": "theme-park-web-port",
@@ -109,7 +132,8 @@
     "notes": "原帖时间为 2026-11-10 17:41 UTC，即 2026-11-11 01:41 Asia/Shanghai。补充报道：https://www.theverge.com/ai-artificial-intelligence/1031117/demis-hassabis-used-ai-to-reverse-engineer-his-own-game-and-port-it-to-the-web 。原作与 Peter Molyneux / Bullfrog 有关，以 Hassabis 自述为准。",
     "preview": {
       "x_url": "https://x.com/demishassabis/status/2120210297948696997"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385895931_theme-park-web-port.jpg"
   },
   {
     "id": "project-fortify",
@@ -308,7 +332,8 @@
     "notes": "原帖 2026-11-10 21:16 UTC（2026-11-11 05:16 Asia/Shanghai）。Google 转发：https://x.com/Google/status/2120324708826550328 。数字与实现细节为作者自述。",
     "preview": {
       "x_url": "https://x.com/GlitterPixely/status/2120264316092022895"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385905738_glitterpixely-cuda-meadow.jpg"
   },
   {
     "id": "kimmonismus-tideforge",
@@ -323,7 +348,8 @@
     "notes": "原帖 2026-11-10 16:05 UTC（2026-11-11 00:05 Asia/Shanghai）。Google 转发：https://x.com/Google/status/2120324710307131464 。",
     "preview": {
       "x_url": "https://x.com/kimmonismus/status/2120186202271945137"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385908406_kimmonismus-tideforge.jpg"
   },
   {
     "id": "ai-andrew-stained-glass-jenga",
@@ -340,7 +366,8 @@
       "play_url": "https://vitrail.andrewvoirol.com/",
       "iframe": true,
       "x_url": "https://x.com/AI_Andrew/status/2120243379388760176"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385913183_ai-andrew-stained-glass-jenga.jpg"
   },
   {
     "id": "giyu-codes-fourteen-apps",
@@ -355,7 +382,8 @@
     "notes": "14 个应用按官方转发与作者主题帖收录为一条，不拆成 14 条。原帖 2026-11-10 17:07 UTC。Google 转发：https://x.com/Google/status/2120324719086088676 。",
     "preview": {
       "x_url": "https://x.com/giyu_codes/status/2120201582319190381"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385913263_giyu-codes-fourteen-apps.jpg"
   },
   {
     "id": "thebuggeddev-parisian-optics-lab",
@@ -370,7 +398,8 @@
     "notes": "原帖 2026-11-10 17:07 UTC。Google 转发：https://x.com/Google/status/2120324721816539520 。零件数量与物理效果为作者自述。",
     "preview": {
       "x_url": "https://x.com/thebuggeddev/status/2120201759305998343"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385916256_thebuggeddev-parisian-optics-lab.jpg"
   },
   {
     "id": "sunset-evm-clockwork-heart",
@@ -385,7 +414,8 @@
     "notes": "原帖 2026-11-11 00:10 UTC（2026-11-11 08:10 Asia/Shanghai）。作者自述，未见独立试玩页。",
     "preview": {
       "x_url": "https://x.com/sunset_evm/status/2120308090180714970"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385913936_sunset-evm-clockwork-heart.jpg"
   },
   {
     "id": "ai-for-success-v8-engine",
@@ -400,7 +430,8 @@
     "notes": "细节帖：https://x.com/ai_for_success/status/2120187068634837203 。功率、耗时为作者自述。",
     "preview": {
       "x_url": "https://x.com/ai_for_success/status/2120317619588972867"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385922745_ai-for-success-v8-engine.jpg"
   },
   {
     "id": "athrix-f1-and-mcps",
@@ -415,7 +446,8 @@
     "notes": "原帖 2026-11-10 16:35 UTC。游戏与两个 MCP 由同一作者在同一帖中说明，收录为一条。对比评价为作者观感。",
     "preview": {
       "x_url": "https://x.com/athrix_codes/status/2120193545344786446"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385928368_athrix-f1-and-mcps.jpg"
   },
   {
     "id": "soumyadesign-symphony-visualizer",
@@ -432,7 +464,8 @@
       "play_url": "https://music-visualiser.ai.studio/",
       "iframe": true,
       "x_url": "https://x.com/soumyadesign/status/2120200838899712246"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385920383_soumyadesign-symphony-visualizer.jpg"
   },
   {
     "id": "leslie-nooteboom-coventry",
@@ -447,7 +480,8 @@
     "notes": "原帖 2026-11-10 17:17 UTC。作者自述，影片在原帖中。",
     "preview": {
       "x_url": "https://x.com/LeslieNooteboom/status/2120204269173563872"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385927055_leslie-nooteboom-coventry.jpg"
   },
   {
     "id": "cgm-ai-sailor-voxel",
@@ -464,7 +498,8 @@
       "play_url": "https://tdgl.codes/games/sailor-voxel-studio/",
       "iframe": true,
       "x_url": "https://x.com/cgm_ai/status/2120327608433102929"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385930760_cgm-ai-sailor-voxel.jpg"
   },
   {
     "id": "glenngabe-pitfall",
@@ -494,7 +529,8 @@
     "notes": "原帖 2026-11-11 02:36 UTC（2026-11-11 10:36 Asia/Shanghai）。实现细节为发帖者自述。",
     "preview": {
       "x_url": "https://x.com/StatsWire/status/2120344850071540152"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385935703_statswire-nyc-cruiser.jpg"
   },
   {
     "id": "kayshen-perihelion",
@@ -509,7 +545,8 @@
     "notes": "原帖 2026-11-10 13:46 UTC（2026-11-10 21:46 Asia/Shanghai）。作者明确写了自己补了被截断后的交互。",
     "preview": {
       "x_url": "https://x.com/kayshen_xu/status/2120151206270267864"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385935117_kayshen-perihelion.jpg"
   },
   {
     "id": "emollick-video-to-threejs",
@@ -524,7 +561,8 @@
     "notes": "原帖 2026-11-10 16:56 UTC。评价为作者观感；演示本身有原帖视频。",
     "preview": {
       "x_url": "https://x.com/emollick/status/2120198832202125322"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385939327_emollick-video-to-threejs.jpg"
   },
   {
     "id": "simonw-pelican-thinking-levels",
@@ -536,7 +574,9 @@
     "author": "Simon Willison",
     "date": "2026-11-10",
     "source_type": "blog",
-    "notes": "文章时间 2026-11-10 20:09（页面未标时区；按文中发布日收录）。这是独立复现，不是 Google 的 Pelican Quest 游戏。"
+    "notes": "文章时间 2026-11-10 20:09（页面未标时区；按文中发布日收录）。这是独立复现，不是 Google 的 Pelican Quest 游戏。",
+    "image_url": "https://upload.maynor1024.live/file/1794385892580_simonw-pelican-thinking-levels.webp",
+    "preview": {}
   },
   {
     "id": "simonw-yonkers-mech-osm",
@@ -548,7 +588,11 @@
     "author": "Simon Willison",
     "date": "2026-11-10",
     "source_type": "blog",
-    "notes": "与鹈鹕 SVG 测试是同一篇文章中的另一项独立实验。"
+    "notes": "与鹈鹕 SVG 测试是同一篇文章中的另一项独立实验。",
+    "image_url": "https://upload.maynor1024.live/file/1794385901321_simonw-yonkers-mech-osm.jpg",
+    "preview": {
+      "video_url": "https://static.simonwillison.net/static/2026/yonkers-carbon.mp4"
+    }
   },
   {
     "id": "stateinteroffic-carbon-directs-deepseek",
@@ -578,7 +622,8 @@
     "notes": "原帖 2026-11-10 14:14 UTC（2026-11-10 22:14 Asia/Shanghai）。体素数与 60fps 为作者自述。作者在公开后将早期权限阶段的模型认定为 Carbon；本条按作者现署名收录，不另把第三方 Argon/Arena 目录里的同款视频算作独立案例。",
     "preview": {
       "x_url": "https://x.com/Adidotdev/status/2120158160074002823"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385941842_adidotdev-voxel-viaduct.jpg"
   },
   {
     "id": "ai-screening-galloping-zebra",
@@ -593,7 +638,8 @@
     "notes": "原帖 2026-11-10 16:02 UTC（2026-11-11 00:02 Asia/Shanghai）。「一枪做成」为作者自述。",
     "preview": {
       "x_url": "https://x.com/AI_Screening/status/2120185448727462301"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385939573_ai-screening-galloping-zebra.jpg"
   },
   {
     "id": "kickingkeys-code-music-video",
@@ -608,7 +654,8 @@
     "notes": "原帖 2026-11-10 16:03 UTC（2026-11-11 00:03 Asia/Shanghai）。本条只收录该帖所展示的这一支音乐视频，不把「更多例子」拆成未经核验的多条。",
     "preview": {
       "x_url": "https://x.com/kickingkeys/status/2120185497637024013"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385948865_kickingkeys-code-music-video.jpg"
   },
   {
     "id": "simonasltu-pooperman",
@@ -623,7 +670,8 @@
     "notes": "原帖 2026-11-10 16:08 UTC（2026-11-11 00:08 Asia/Shanghai）。游戏名与规则来自作者公开的提示原文。耗时为作者自述。",
     "preview": {
       "x_url": "https://x.com/SimonasLTU1/status/2120186826451288182"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385946469_simonasltu-pooperman.jpg"
   },
   {
     "id": "lexnlin-basketball-court",
@@ -638,7 +686,8 @@
     "notes": "原帖 2026-11-10 16:09 UTC（2026-11-11 00:09 Asia/Shanghai）。对比 Argon 的观感是作者个人评价。",
     "preview": {
       "x_url": "https://x.com/LexnLin/status/2120186998707163533"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385948141_lexnlin-basketball-court.jpg"
   },
   {
     "id": "ai-for-success-adiyogi",
@@ -653,7 +702,8 @@
     "notes": "原帖 2026-11-10 16:09 UTC（2026-11-11 00:09 Asia/Shanghai）。与已收录的双涡轮 V8 引擎是同一作者的另一件作品。本条只收录帖中点名并展示的第一件 Adiyogi 演示，不把未单独给出来源的其余作品自动拆条。",
     "preview": {
       "x_url": "https://x.com/ai_for_success/status/2120187064184664162"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385949891_ai-for-success-adiyogi.jpg"
   },
   {
     "id": "itspaulai-single-html-animation",
@@ -668,7 +718,8 @@
     "notes": "原帖 2026-11-10 16:13 UTC（2026-11-11 00:13 Asia/Shanghai）。原帖有视频；未写出动画的具体主题名称，故标题按作者自己的描述收录。",
     "preview": {
       "x_url": "https://x.com/itsPaulAi/status/2120188198592663935"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385953038_itspaulai-single-html-animation.jpg"
   },
   {
     "id": "fofrai-cuda-vfx-engine",
@@ -683,7 +734,8 @@
     "notes": "原帖 2026-11-10 16:15 UTC（2026-11-11 00:15 Asia/Shanghai）。与已收录的 GlitterPixely CUDA 草地是不同作者、不同作品。",
     "preview": {
       "x_url": "https://x.com/fofrAI/status/2120188535152222407"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385958875_fofrai-cuda-vfx-engine.jpg"
   },
   {
     "id": "codebypoonam-15-principles",
@@ -698,7 +750,8 @@
     "notes": "原帖 2026-11-10 16:31 UTC（2026-11-11 00:31 Asia/Shanghai）。「零剪辑」「15 原则」为作者自述。",
     "preview": {
       "x_url": "https://x.com/CodeByPoonam/status/2120192694622580794"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385959503_codebypoonam-15-principles.jpg"
   },
   {
     "id": "statswire-planetarium-automaton",
@@ -728,7 +781,8 @@
     "notes": "原帖 2026-11-10 17:04 UTC（2026-11-11 01:04 Asia/Shanghai）。「无框架」「纯 JS + Python」为作者自述。",
     "preview": {
       "x_url": "https://x.com/devteamdrew/status/2120200837305884813"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385958627_devteamdrew-reference-animation.jpg"
   },
   {
     "id": "adidotdev-coral-reef-short",
@@ -743,7 +797,8 @@
     "notes": "原帖 2026-11-10 17:36 UTC（2026-11-11 01:36 Asia/Shanghai）。与高架列车体素场景为同一作者的另一件作品。时长与数量为作者自述。",
     "preview": {
       "x_url": "https://x.com/Adidotdev/status/2120208990089175300"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385964988_adidotdev-coral-reef-short.jpg"
   },
   {
     "id": "statswire-hypercar-racer",
@@ -758,7 +813,8 @@
     "notes": "原帖 2026-11-10 17:49 UTC（2026-11-11 01:49 Asia/Shanghai）。性能与声音细节为作者自述。",
     "preview": {
       "x_url": "https://x.com/StatsWire/status/2120212182482682232"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385968399_statswire-hypercar-racer.jpg"
   },
   {
     "id": "anuragdotdev-desk-racer",
@@ -773,7 +829,8 @@
     "notes": "原帖 2026-11-10 17:55 UTC（2026-11-11 01:55 Asia/Shanghai）。模式数量与物理引擎为作者自述；原帖在列举处被截断，本条不补充未见的条目。",
     "preview": {
       "x_url": "https://x.com/anuragdotdev/status/2120213817573740687"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385966487_anuragdotdev-desk-racer.jpg"
   },
   {
     "id": "atomicagent-minion-orchestration",
@@ -788,7 +845,8 @@
     "notes": "原帖 2026-11-10 18:50 UTC（2026-11-11 02:50 Asia/Shanghai）。这是 Carbon 做任务拆分、本地模型参与生成的混合流程，不是 Carbon 单独完成全部画面。耗时与费用为作者自述。产品推广链接不作为收录依据。",
     "preview": {
       "x_url": "https://x.com/atomicagent_io/status/2120227531504918833"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385971275_atomicagent-minion-orchestration.jpg"
   },
   {
     "id": "ia-met-webgl2-shaders",
@@ -803,7 +861,8 @@
     "notes": "原帖 2026-11-10 18:54 UTC（2026-11-11 02:54 Asia/Shanghai）。行数、耗时、费用和「一枪」为作者自述。原帖未给出可公开试玩的独立网址。",
     "preview": {
       "x_url": "https://x.com/ia_met/status/2120228626608050335"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385972252_ia-met-webgl2-shaders.jpg"
   },
   {
     "id": "harshithlucky3-crabs-svg",
@@ -818,7 +877,8 @@
     "notes": "原帖 2026-11-10 19:26 UTC（2026-11-11 03:26 Asia/Shanghai）。这是作者自己生成的 SVG，不是 Google 官方的 Pelican Quest 游戏。",
     "preview": {
       "x_url": "https://x.com/HarshithLucky3/status/2120236571165368720"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385972520_harshithlucky3-crabs-svg.jpg"
   },
   {
     "id": "majin-appsheet-canvas-art",
@@ -833,6 +893,7 @@
     "notes": "原帖 2026-11-10 20:02 UTC（2026-11-11 04:02 Asia/Shanghai）。teamLab 是作者的观感比喻，不是该机构参与或背书。",
     "preview": {
       "x_url": "https://x.com/Majin_AppSheet/status/2120245677439783195"
-    }
+    },
+    "image_url": "https://upload.maynor1024.live/file/1794385975996_majin-appsheet-canvas-art.jpg"
   }
 ]
