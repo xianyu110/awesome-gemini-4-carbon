@@ -44,6 +44,9 @@
       font-weight: 600; letter-spacing: -0.02em; font-size: 1.05rem;
     }
     .topnav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .repo-badges { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .repo-badges a { display: inline-flex; line-height: 0; }
+    .repo-badges img { height: 20px; }
     .btn {
       appearance: none; border: 1px solid var(--line); background: color-mix(in srgb, var(--bg-card) 80%, white);
       color: var(--ink); border-radius: 999px; padding: 7px 13px; font: inherit; font-size: .9rem;
@@ -154,6 +157,11 @@
           <button class="btn active" type="button" id="lang-zh" aria-pressed="true">中文</button>
           <button class="btn" type="button" id="lang-en" aria-pressed="false">EN</button>
           <a class="btn" href="https://github.com/xianyu110/awesome-gemini-4-carbon" rel="noopener">GitHub</a>
+          <div class="repo-badges">
+            <a href="https://github.com/xianyu110/awesome-gemini-4-carbon" rel="noopener" title="GitHub"><img src="https://img.shields.io/github/stars/xianyu110/awesome-gemini-4-carbon?style=social" alt="GitHub stars"></a>
+            <a href="https://github.com/xianyu110/awesome-gemini-4-carbon/fork" rel="noopener" title="Fork"><img src="https://img.shields.io/github/forks/xianyu110/awesome-gemini-4-carbon?style=social" alt="GitHub forks"></a>
+            <a href="https://github.com/xianyu110/awesome-gemini-4-carbon/blob/main/LICENSE" rel="noopener" title="License"><img src="https://img.shields.io/github/license/xianyu110/awesome-gemini-4-carbon?style=flat" alt="MIT license"></a>
+          </div>
           <a class="btn" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" rel="noopener" data-i18n="official">官方介绍</a>
         </div>
       </div>
