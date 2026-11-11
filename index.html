@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Awesome Gemini 4 Carbon</title>
-  <meta name="description" content="社区整理的 Gemini 4 Carbon 公开使用案例">
+  <meta name="description" content="社区整理的 Gemini 4 Carbon 公开使用案例。点选一条，即可在右侧预览视频或直接试玩。">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://xianyu110.github.io/awesome-gemini-4-carbon/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,11 +34,10 @@
     }
     a { color: var(--accent-2); }
     a:hover { color: var(--accent); }
-    .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; padding: 36px 0 80px; }
-    header.hero { padding: 12px 0 28px; }
+    .wrap { width: min(1280px, calc(100% - 28px)); margin: 0 auto; padding: 28px 0 48px; }
     .topnav {
       display: flex; justify-content: space-between; align-items: center;
-      gap: 12px; margin-bottom: 28px; flex-wrap: wrap;
+      gap: 12px; margin-bottom: 22px; flex-wrap: wrap;
     }
     .brand {
       font-family: "Source Serif 4", "Noto Sans SC", serif;
@@ -51,18 +50,18 @@
       cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
     }
     .btn:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
-    .btn.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .btn.active, .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
     h1 {
       font-family: "Source Serif 4", "Noto Sans SC", serif;
-      font-size: clamp(2rem, 5vw, 3.15rem);
-      line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 12px; font-weight: 600;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 10px; font-weight: 600;
     }
-    .lede { max-width: 40rem; color: var(--muted); margin: 0 0 10px; font-size: 1.05rem; }
-    .disclaimer { max-width: 42rem; color: var(--muted); margin: 0; font-size: .92rem; }
-    .stats { margin-top: 22px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--ink); }
-    .stats b { font-variant-numeric: tabular-nums; font-size: 1.35rem; font-weight: 600; display: block; line-height: 1.1; }
+    .lede { max-width: 46rem; color: var(--muted); margin: 0 0 8px; font-size: 1.02rem; }
+    .disclaimer { max-width: 46rem; color: var(--muted); margin: 0; font-size: .9rem; }
+    .stats { margin-top: 18px; display: flex; gap: 18px; flex-wrap: wrap; }
+    .stats b { font-variant-numeric: tabular-nums; font-size: 1.3rem; font-weight: 600; display: block; line-height: 1.1; }
     .stats span { color: var(--muted); font-size: .85rem; }
-    .controls { position: sticky; top: 0; z-index: 5; padding: 12px 0 14px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); }
+    .controls { padding: 14px 0 12px; }
     .search {
       width: 100%; border: 1px solid var(--line); background: var(--bg-card); color: var(--ink);
       border-radius: 14px; padding: 12px 14px; font: inherit; margin-bottom: 12px;
@@ -74,29 +73,81 @@
       border-radius: 999px; padding: 6px 12px; font: inherit; font-size: .86rem; cursor: pointer;
     }
     .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-    .empty { color: var(--muted); padding: 32px 4px; }
-    .list { display: grid; gap: 12px; }
+    .layout { display: grid; grid-template-columns: minmax(280px, 420px) 1fr; gap: 18px; align-items: start; }
+    .listcol { min-width: 0; }
+    .empty { color: var(--muted); padding: 24px 4px; }
+    .list { display: grid; gap: 10px; }
     article.card {
-      background: var(--bg-card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 18px 20px 16px; box-shadow: var(--shadow);
-      border-left: 4px solid var(--accent);
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: 16px;
+      padding: 14px 16px 12px; box-shadow: var(--shadow);
+      border-left: 4px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+      cursor: pointer; text-align: left; width: 100%; font: inherit; color: inherit;
     }
-    article.card h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 8px; letter-spacing: -0.02em; font-weight: 650; }
-    article.card p { margin: 0 0 12px; color: #3a352e; }
-    .meta { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; color: var(--muted); font-size: .86rem; }
-    .cat {
+    article.card:hover { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+    article.card.selected {
+      border-color: var(--accent);
+      border-left-color: var(--accent);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+    }
+    article.card h2 { font-size: 1.02rem; line-height: 1.35; margin: 0 0 6px; letter-spacing: -0.02em; font-weight: 650; }
+    article.card p { margin: 0 0 8px; color: #3a352e; font-size: .92rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; color: var(--muted); font-size: .8rem; }
+    .cat, .badge {
       display: inline-flex; align-items: center; border-radius: 999px; padding: 2px 8px;
       background: color-mix(in srgb, var(--accent) 12%, var(--bg));
-      color: var(--accent-2); font-size: .78rem; font-weight: 500;
+      color: var(--accent-2); font-size: .74rem; font-weight: 500;
     }
-    .notes { margin: 8px 0 0; color: var(--muted); font-size: .86rem; }
-    footer { margin-top: 40px; color: var(--muted); font-size: .86rem; border-top: 1px solid var(--line); padding-top: 18px; }
+    .badge.play { background: color-mix(in srgb, var(--accent) 22%, var(--bg)); }
+    .preview-pane {
+      position: sticky; top: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      min-height: calc(100vh - 24px);
+      box-shadow: var(--shadow);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .preview-bar {
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;
+      padding: 14px 16px 10px; border-bottom: 1px solid var(--line);
+    }
+    .preview-bar h2 { font-size: 1.08rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+    .preview-bar .sub { color: var(--muted); font-size: .86rem; margin: 0; }
+    .preview-actions { display: flex; gap: 8px; flex-wrap: wrap; flex-shrink: 0; }
+    .preview-stage {
+      flex: 1; background: #161412; color: #efeae2; min-height: 420px;
+      display: flex; align-items: stretch; justify-content: center;
+    }
+    .preview-stage .placeholder {
+      margin: auto; padding: 28px; text-align: center; color: #cfc6b8; max-width: 28rem;
+    }
+    .preview-stage iframe, .preview-stage .x-embed {
+      width: 100%; border: 0; min-height: 520px; background: #fff;
+    }
+    .preview-stage .x-embed { padding: 12px 12px 20px; overflow: auto; }
+    .preview-notes { padding: 12px 16px 16px; color: var(--muted); font-size: .86rem; border-top: 1px solid var(--line); }
+    .close-preview {
+      display: none; appearance: none; border: 1px solid var(--line); background: var(--bg-card);
+      border-radius: 999px; padding: 6px 11px; font: inherit; cursor: pointer;
+    }
+    footer { margin-top: 28px; color: var(--muted); font-size: .86rem; border-top: 1px solid var(--line); padding-top: 16px; }
     footer p { margin: 0 0 8px; }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .preview-pane {
+        position: fixed; inset: 0; z-index: 30; border-radius: 0; min-height: 100%;
+        transform: translateY(100%); transition: transform .22s ease; top: 0;
+      }
+      .preview-pane.open { transform: translateY(0); }
+      .close-preview { display: inline-flex; }
+      .preview-stage, .preview-stage iframe, .preview-stage .x-embed { min-height: 55vh; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="hero">
+    <header>
       <div class="topnav">
         <div class="brand" data-i18n="title">Awesome Gemini 4 Carbon</div>
         <div class="topnav-links">
@@ -107,11 +158,12 @@
         </div>
       </div>
       <h1 data-i18n="title">Awesome Gemini 4 Carbon</h1>
-      <p class="lede" data-i18n="tag">社区整理的 Gemini 4 Carbon 公开使用案例</p>
+      <p class="lede" data-i18n="tag">社区整理的 Gemini 4 Carbon 公开使用案例。点选一条，即可在右侧预览视频或直接试玩。</p>
       <p class="disclaimer" data-i18n="disclaimer">本站点不是 Google 或 Google DeepMind 的官方项目，也不代表其背书。</p>
       <div class="stats">
         <div><b id="stat-total">—</b><span data-i18n="stat-total">已核验案例</span></div>
         <div><b id="stat-shown">—</b><span data-i18n="stat-shown">当前筛选</span></div>
+        <div><b id="stat-preview">—</b><span data-i18n="stat-preview">可预览 / 试玩</span></div>
       </div>
     </header>
 
@@ -120,8 +172,27 @@
       <div class="chips" id="chips"></div>
     </div>
 
-    <div id="empty" class="empty" hidden></div>
-    <div class="list" id="list"></div>
+    <div class="layout">
+      <div class="listcol">
+        <div id="empty" class="empty" hidden></div>
+        <div class="list" id="list"></div>
+      </div>
+      <aside class="preview-pane" id="pane" aria-live="polite">
+        <div class="preview-bar">
+          <div>
+            <h2 id="pane-title" data-i18n="preview-empty-title">选择一条案例预览</h2>
+            <p class="sub" id="pane-sub" data-i18n="preview-empty-sub">有视频的条目会在这里直接播放，有公开演示的可以在页面里试玩。</p>
+          </div>
+          <div class="preview-actions">
+            <a class="btn primary" id="btn-play" hidden target="_blank" rel="noopener"></a>
+            <a class="btn" id="btn-source" hidden target="_blank" rel="noopener"></a>
+            <button class="close-preview" type="button" id="btn-close" data-i18n="close">关闭</button>
+          </div>
+        </div>
+        <div class="preview-stage" id="stage"></div>
+        <div class="preview-notes" id="pane-notes" hidden></div>
+      </aside>
+    </div>
 
     <footer>
       <p data-i18n="footer-1">数据来自本仓库的 cases.json，数字与评价均摘自原出处，不是本站的独立验证。</p>
@@ -132,32 +203,52 @@
     const I18N = {
       zh: {
         title: "Awesome Gemini 4 Carbon",
-        tag: "社区整理的 Gemini 4 Carbon 公开使用案例",
+        tag: "社区整理的 Gemini 4 Carbon 公开使用案例。点选一条，即可在右侧预览视频或直接试玩。",
         disclaimer: "本站点不是 Google 或 Google DeepMind 的官方项目，也不代表其背书。",
         official: "官方介绍",
         "stat-total": "已核验案例",
         "stat-shown": "当前筛选",
+        "stat-preview": "可预览 / 试玩",
         search: "搜索标题、作者、摘要或来源…",
         all: "全部",
-        source: "来源",
+        previewable: "可预览",
+        playable: "可试玩",
+        source: "打开来源",
+        play: "打开试玩",
+        close: "关闭",
+        watch: "预览视频",
         empty: "没有符合条件的案例。",
+        "preview-empty-title": "选择一条案例预览",
+        "preview-empty-sub": "有视频的条目会在这里直接播放，有公开演示的可以在页面里试玩。",
+        "no-embed": "这条案例没有可嵌入的预览。请打开来源查看原文，或在新标签打开试玩。",
+        "iframe-note": "如果演示没有显示，可能是该站点不允许嵌入，请点「打开试玩」。",
         "footer-1": "数据来自本仓库的 cases.json，数字与评价均摘自原出处，不是本站的独立验证。",
-        "footer-2": "MIT License。网络安全相关条目只记录公开结论，不收录利用步骤或复现流程。",
+        "footer-2": "MIT License。网络安全相关条目只记录公开结论，不收录利用步骤或复现流程。预览使用原作者或官方页面的嵌入，本站不转存媒体文件。",
         cats: {"official-demo": "官方演示", "cybersecurity": "网络安全", "science": "科学研究", "engineering": "软件工程", "knowledge-work": "知识工作", "community": "社区作品"}
       },
       en: {
         title: "Awesome Gemini 4 Carbon",
-        tag: "A community catalog of public Gemini 4 Carbon use cases",
+        tag: "A community catalog of public Gemini 4 Carbon use cases. Select a case to preview its video or play the demo.",
         disclaimer: "This site is not an official Google or Google DeepMind project and is not endorsed by them.",
         official: "Official post",
         "stat-total": "Verified cases",
         "stat-shown": "In this view",
+        "stat-preview": "Previewable / playable",
         search: "Search titles, authors, summaries, or sources…",
         all: "All",
-        source: "Source",
+        previewable: "Previewable",
+        playable: "Playable",
+        source: "Open source",
+        play: "Open demo",
+        close: "Close",
+        watch: "Watch",
         empty: "No cases match this filter.",
+        "preview-empty-title": "Select a case to preview",
+        "preview-empty-sub": "Videos play here. Public demos can be tried in the page when embedding is allowed.",
+        "no-embed": "This case has no embeddable preview. Open the source, or try the demo in a new tab.",
+        "iframe-note": "If the demo is blank, the site may block embedding. Use “Open demo”.",
         "footer-1": "Data comes from cases.json in this repository. Figures and claims are from the original sources, not independently verified here.",
-        "footer-2": "MIT License. Cybersecurity entries stay high-level and do not include exploit steps or reproduction procedures.",
+        "footer-2": "MIT License. Cybersecurity entries stay high-level and do not include exploit steps or reproduction procedures. Previews use the original embeds; this site does not host the media files.",
         cats: {"official-demo": "Official demos", "cybersecurity": "Cybersecurity", "science": "Science", "engineering": "Engineering", "knowledge-work": "Knowledge work", "community": "Community"}
       }
     };
@@ -165,15 +256,18 @@
     let lang = "zh";
     let cat = "all";
     let cases = [];
+    let selectedId = null;
 
     const $ = (id) => document.getElementById(id);
+    const hasPreview = (c) => !!(c.preview && (c.preview.play_url || c.preview.x_url || c.preview.youtube_id));
+    const hasPlay = (c) => !!(c.preview && c.preview.play_url);
 
     function applyI18n() {
       const t = I18N[lang];
       document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
       document.title = t.title;
       document.querySelectorAll("[data-i18n]").forEach((el) => {
-        el.textContent = t[el.dataset.i18n];
+        if (!$("pane-title").contains(el) || !selectedId) el.textContent = t[el.dataset.i18n];
       });
       const q = $("q");
       if (q) q.placeholder = t.search;
@@ -181,22 +275,27 @@
       $("lang-en").classList.toggle("active", lang === "en");
       $("lang-zh").setAttribute("aria-pressed", lang === "zh");
       $("lang-en").setAttribute("aria-pressed", lang === "en");
+      $("btn-close").textContent = t.close;
       renderChips();
       render();
+      showSelected(false);
     }
 
     function renderChips() {
       const t = I18N[lang];
       const box = $("chips");
-      const keys = ["all", ...CAT_ORDER];
+      const keys = ["all", "previewable", ...CAT_ORDER];
       box.innerHTML = "";
       keys.forEach((key) => {
         const b = document.createElement("button");
         b.type = "button";
         b.className = "chip";
-        b.dataset.cat = key;
         b.setAttribute("aria-pressed", cat === key);
-        b.textContent = key === "all" ? `${t.all} ${cases.length}` : `${t.cats[key] || key} ${cases.filter(c => c.category === key).length}`;
+        const count = key === "all" ? cases.length
+          : key === "previewable" ? cases.filter(hasPreview).length
+          : cases.filter(c => c.category === key).length;
+        const label = key === "all" ? t.all : key === "previewable" ? t.previewable : (t.cats[key] || key);
+        b.textContent = `${label} ${count}`;
         b.addEventListener("click", () => { cat = key; applyI18n(); });
         box.appendChild(b);
       });
@@ -205,11 +304,23 @@
     function filtered() {
       const q = ($("q").value || "").trim().toLowerCase();
       return cases.filter((c) => {
-        if (cat !== "all" && c.category !== cat) return false;
+        if (cat === "previewable" && !hasPreview(c)) return false;
+        if (cat !== "all" && cat !== "previewable" && c.category !== cat) return false;
         if (!q) return true;
         const blob = [c.title_zh, c.title_en, c.summary, c.author, c.source_url, c.notes, c.category].filter(Boolean).join(" ").toLowerCase();
         return blob.includes(q);
       });
+    }
+
+    function selectCase(id, fromUser) {
+      selectedId = id;
+      document.querySelectorAll("article.card").forEach((el) => {
+        el.classList.toggle("selected", el.dataset.id === id);
+      });
+      showSelected(fromUser);
+      if (fromUser && window.matchMedia("(max-width: 900px)").matches) {
+        $("pane").classList.add("open");
+      }
     }
 
     function render() {
@@ -217,6 +328,7 @@
       const rows = filtered();
       $("stat-total").textContent = String(cases.length);
       $("stat-shown").textContent = String(rows.length);
+      $("stat-preview").textContent = String(cases.filter(hasPreview).length);
       const empty = $("empty");
       const list = $("list");
       list.innerHTML = "";
@@ -229,7 +341,10 @@
       const frag = document.createDocumentFragment();
       rows.forEach((c) => {
         const art = document.createElement("article");
-        art.className = "card";
+        art.className = "card" + (c.id === selectedId ? " selected" : "");
+        art.dataset.id = c.id;
+        art.tabIndex = 0;
+        art.setAttribute("role", "button");
         const title = lang === "en" ? (c.title_en || c.title_zh) : (c.title_zh || c.title_en);
         const h2 = document.createElement("h2");
         h2.textContent = title;
@@ -245,6 +360,17 @@
         catEl.className = "cat";
         catEl.textContent = t.cats[c.category] || c.category;
         meta.appendChild(catEl);
+        if (hasPlay(c)) {
+          const b = document.createElement("span");
+          b.className = "badge play";
+          b.textContent = t.playable;
+          meta.appendChild(b);
+        } else if (hasPreview(c)) {
+          const b = document.createElement("span");
+          b.className = "badge";
+          b.textContent = t.previewable;
+          meta.appendChild(b);
+        }
         if (c.author) {
           const a = document.createElement("span");
           a.textContent = c.author;
@@ -255,31 +381,102 @@
           d.textContent = c.date;
           meta.appendChild(d);
         }
-        if (c.source_url) {
-          const link = document.createElement("a");
-          link.href = c.source_url;
-          link.rel = "noopener";
-          link.target = "_blank";
-          link.textContent = t.source;
-          meta.appendChild(link);
-        }
         art.appendChild(meta);
-        if (c.notes) {
-          const n = document.createElement("p");
-          n.className = "notes";
-          n.textContent = c.notes;
-          art.appendChild(n);
-        }
+        art.addEventListener("click", () => selectCase(c.id, true));
+        art.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); selectCase(c.id, true); }
+        });
         frag.appendChild(art);
       });
       list.appendChild(frag);
+      if (!selectedId || !rows.some((c) => c.id === selectedId)) {
+        const first = rows.find(hasPreview) || rows[0];
+        if (first) selectCase(first.id, false);
+      }
+    }
+
+    function showSelected(fromUser) {
+      const t = I18N[lang];
+      const c = cases.find((x) => x.id === selectedId);
+      const stage = $("stage");
+      const notes = $("pane-notes");
+      const btnPlay = $("btn-play");
+      const btnSrc = $("btn-source");
+      stage.innerHTML = "";
+      if (!c) {
+        $("pane-title").textContent = t["preview-empty-title"];
+        $("pane-sub").textContent = t["preview-empty-sub"];
+        btnPlay.hidden = true;
+        btnSrc.hidden = true;
+        notes.hidden = true;
+        stage.innerHTML = `<div class="placeholder">${t["preview-empty-sub"]}</div>`;
+        return;
+      }
+      const title = lang === "en" ? (c.title_en || c.title_zh) : (c.title_zh || c.title_en);
+      $("pane-title").textContent = title;
+      $("pane-sub").textContent = [c.author, c.date].filter(Boolean).join(" · ");
+      const prev = c.preview || {};
+      if (prev.play_url) {
+        btnPlay.hidden = false;
+        btnPlay.href = prev.play_url;
+        btnPlay.textContent = t.play;
+      } else {
+        btnPlay.hidden = true;
+      }
+      if (c.source_url) {
+        btnSrc.hidden = false;
+        btnSrc.href = c.source_url;
+        btnSrc.textContent = t.source;
+      } else {
+        btnSrc.hidden = true;
+      }
+      if (prev.iframe && prev.play_url) {
+        const f = document.createElement("iframe");
+        f.src = prev.play_url;
+        f.title = title;
+        f.allow = "autoplay; fullscreen; gamepad; xr-spatial-tracking";
+        f.referrerPolicy = "no-referrer-when-downgrade";
+        stage.appendChild(f);
+        notes.hidden = false;
+        notes.textContent = t["iframe-note"];
+      } else if (prev.youtube_id) {
+        const f = document.createElement("iframe");
+        f.src = `https://www.youtube-nocookie.com/embed/${prev.youtube_id}?rel=0`;
+        f.title = title;
+        f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        f.allowFullscreen = true;
+        stage.appendChild(f);
+        notes.hidden = !!c.notes;
+        notes.hidden = !c.notes;
+        notes.textContent = c.notes || "";
+      } else if (prev.x_url) {
+        const box = document.createElement("div");
+        box.className = "x-embed";
+        box.innerHTML = `<blockquote class="twitter-tweet" data-dnt="true" data-media-max-width="560"><a href="${prev.x_url.replace('https://x.com/', 'https://twitter.com/')}"></a></blockquote>`;
+        stage.appendChild(box);
+        if (window.twttr && twttr.widgets) twttr.widgets.load(box);
+        notes.hidden = !c.notes;
+        notes.textContent = c.notes || "";
+      } else {
+        stage.innerHTML = `<div class="placeholder">${t["no-embed"]}</div>`;
+        notes.hidden = !c.notes;
+        notes.textContent = c.notes || "";
+      }
+      if (c.notes && notes.hidden === false && !notes.textContent) notes.textContent = c.notes;
     }
 
     $("lang-zh").addEventListener("click", () => { lang = "zh"; applyI18n(); });
     $("lang-en").addEventListener("click", () => { lang = "en"; applyI18n(); });
     $("q").addEventListener("input", render);
+    $("btn-close").addEventListener("click", () => $("pane").classList.remove("open"));
 
-    fetch("./cases.json")
+    const tw = document.createElement("script");
+    tw.src = "https://platform.twitter.com/widgets.js";
+    tw.async = true;
+    tw.charset = "utf-8";
+    document.body.appendChild(tw);
+
+    fetch("./cases.json?v=preview1")
       .then((r) => {
         if (!r.ok) throw new Error("cases.json " + r.status);
         return r.json();
