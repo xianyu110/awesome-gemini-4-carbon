@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awesome Gemini 4 Carbon</title>
+  <meta name="description" content="社区整理的 Gemini 4 Carbon 公开使用案例">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://xianyu110.github.io/awesome-gemini-4-carbon/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --bg-card: #fffaf3;
+      --ink: #1c1915;
+      --muted: #5c564c;
+      --line: rgba(28,25,21,.12);
+      --accent: #b4532a;
+      --accent-2: #1f3d34;
+      --shadow: 0 10px 30px rgba(28,25,21,.06);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(1200px 500px at 10% -10%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Noto Sans SC", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--accent-2); }
+    a:hover { color: var(--accent); }
+    .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; padding: 36px 0 80px; }
+    header.hero { padding: 12px 0 28px; }
+    .topnav {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; margin-bottom: 28px; flex-wrap: wrap;
+    }
+    .brand {
+      font-family: "Source Serif 4", "Noto Sans SC", serif;
+      font-weight: 600; letter-spacing: -0.02em; font-size: 1.05rem;
+    }
+    .topnav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .btn {
+      appearance: none; border: 1px solid var(--line); background: color-mix(in srgb, var(--bg-card) 80%, white);
+      color: var(--ink); border-radius: 999px; padding: 7px 13px; font: inherit; font-size: .9rem;
+      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    }
+    .btn:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+    .btn.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    h1 {
+      font-family: "Source Serif 4", "Noto Sans SC", serif;
+      font-size: clamp(2rem, 5vw, 3.15rem);
+      line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 12px; font-weight: 600;
+    }
+    .lede { max-width: 40rem; color: var(--muted); margin: 0 0 10px; font-size: 1.05rem; }
+    .disclaimer { max-width: 42rem; color: var(--muted); margin: 0; font-size: .92rem; }
+    .stats { margin-top: 22px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--ink); }
+    .stats b { font-variant-numeric: tabular-nums; font-size: 1.35rem; font-weight: 600; display: block; line-height: 1.1; }
+    .stats span { color: var(--muted); font-size: .85rem; }
+    .controls { position: sticky; top: 0; z-index: 5; padding: 12px 0 14px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); }
+    .search {
+      width: 100%; border: 1px solid var(--line); background: var(--bg-card); color: var(--ink);
+      border-radius: 14px; padding: 12px 14px; font: inherit; margin-bottom: 12px;
+    }
+    .search:focus { outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent); border-color: var(--accent); }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip {
+      appearance: none; border: 1px solid var(--line); background: var(--bg-card); color: var(--ink);
+      border-radius: 999px; padding: 6px 12px; font: inherit; font-size: .86rem; cursor: pointer;
+    }
+    .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .empty { color: var(--muted); padding: 32px 4px; }
+    .list { display: grid; gap: 12px; }
+    article.card {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 18px 20px 16px; box-shadow: var(--shadow);
+      border-left: 4px solid var(--accent);
+    }
+    article.card h2 { font-size: 1.15rem; line-height: 1.35; margin: 0 0 8px; letter-spacing: -0.02em; font-weight: 650; }
+    article.card p { margin: 0 0 12px; color: #3a352e; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; color: var(--muted); font-size: .86rem; }
+    .cat {
+      display: inline-flex; align-items: center; border-radius: 999px; padding: 2px 8px;
+      background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+      color: var(--accent-2); font-size: .78rem; font-weight: 500;
+    }
+    .notes { margin: 8px 0 0; color: var(--muted); font-size: .86rem; }
+    footer { margin-top: 40px; color: var(--muted); font-size: .86rem; border-top: 1px solid var(--line); padding-top: 18px; }
+    footer p { margin: 0 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="topnav">
+        <div class="brand" data-i18n="title">Awesome Gemini 4 Carbon</div>
+        <div class="topnav-links">
+          <button class="btn active" type="button" id="lang-zh" aria-pressed="true">中文</button>
+          <button class="btn" type="button" id="lang-en" aria-pressed="false">EN</button>
+          <a class="btn" href="https://github.com/xianyu110/awesome-gemini-4-carbon" rel="noopener">GitHub</a>
+          <a class="btn" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" rel="noopener" data-i18n="official">官方介绍</a>
+        </div>
+      </div>
+      <h1 data-i18n="title">Awesome Gemini 4 Carbon</h1>
+      <p class="lede" data-i18n="tag">社区整理的 Gemini 4 Carbon 公开使用案例</p>
+      <p class="disclaimer" data-i18n="disclaimer">本站点不是 Google 或 Google DeepMind 的官方项目，也不代表其背书。</p>
+      <div class="stats">
+        <div><b id="stat-total">—</b><span data-i18n="stat-total">已核验案例</span></div>
+        <div><b id="stat-shown">—</b><span data-i18n="stat-shown">当前筛选</span></div>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input class="search" id="q" type="search" data-i18n-placeholder="search" placeholder="搜索标题、作者、摘要或来源…">
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <div id="empty" class="empty" hidden></div>
+    <div class="list" id="list"></div>
+
+    <footer>
+      <p data-i18n="footer-1">数据来自本仓库的 cases.json，数字与评价均摘自原出处，不是本站的独立验证。</p>
+      <p data-i18n="footer-2">MIT License。网络安全相关条目只记录公开结论，不收录利用步骤或复现流程。</p>
+    </footer>
+  </div>
+  <script>
+    const I18N = {
+      zh: {
+        title: "Awesome Gemini 4 Carbon",
+        tag: "社区整理的 Gemini 4 Carbon 公开使用案例",
+        disclaimer: "本站点不是 Google 或 Google DeepMind 的官方项目，也不代表其背书。",
+        official: "官方介绍",
+        "stat-total": "已核验案例",
+        "stat-shown": "当前筛选",
+        search: "搜索标题、作者、摘要或来源…",
+        all: "全部",
+        source: "来源",
+        empty: "没有符合条件的案例。",
+        "footer-1": "数据来自本仓库的 cases.json，数字与评价均摘自原出处，不是本站的独立验证。",
+        "footer-2": "MIT License。网络安全相关条目只记录公开结论，不收录利用步骤或复现流程。",
+        cats: {"official-demo": "官方演示", "cybersecurity": "网络安全", "science": "科学研究", "engineering": "软件工程", "knowledge-work": "知识工作", "community": "社区作品"}
+      },
+      en: {
+        title: "Awesome Gemini 4 Carbon",
+        tag: "A community catalog of public Gemini 4 Carbon use cases",
+        disclaimer: "This site is not an official Google or Google DeepMind project and is not endorsed by them.",
+        official: "Official post",
+        "stat-total": "Verified cases",
+        "stat-shown": "In this view",
+        search: "Search titles, authors, summaries, or sources…",
+        all: "All",
+        source: "Source",
+        empty: "No cases match this filter.",
+        "footer-1": "Data comes from cases.json in this repository. Figures and claims are from the original sources, not independently verified here.",
+        "footer-2": "MIT License. Cybersecurity entries stay high-level and do not include exploit steps or reproduction procedures.",
+        cats: {"official-demo": "Official demos", "cybersecurity": "Cybersecurity", "science": "Science", "engineering": "Engineering", "knowledge-work": "Knowledge work", "community": "Community"}
+      }
+    };
+    const CAT_ORDER = ["official-demo", "cybersecurity", "science", "engineering", "knowledge-work", "community"];
+    let lang = "zh";
+    let cat = "all";
+    let cases = [];
+
+    const $ = (id) => document.getElementById(id);
+
+    function applyI18n() {
+      const t = I18N[lang];
+      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+      document.title = t.title;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        el.textContent = t[el.dataset.i18n];
+      });
+      const q = $("q");
+      if (q) q.placeholder = t.search;
+      $("lang-zh").classList.toggle("active", lang === "zh");
+      $("lang-en").classList.toggle("active", lang === "en");
+      $("lang-zh").setAttribute("aria-pressed", lang === "zh");
+      $("lang-en").setAttribute("aria-pressed", lang === "en");
+      renderChips();
+      render();
+    }
+
+    function renderChips() {
+      const t = I18N[lang];
+      const box = $("chips");
+      const keys = ["all", ...CAT_ORDER];
+      box.innerHTML = "";
+      keys.forEach((key) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "chip";
+        b.dataset.cat = key;
+        b.setAttribute("aria-pressed", cat === key);
+        b.textContent = key === "all" ? `${t.all} ${cases.length}` : `${t.cats[key] || key} ${cases.filter(c => c.category === key).length}`;
+        b.addEventListener("click", () => { cat = key; applyI18n(); });
+        box.appendChild(b);
+      });
+    }
+
+    function filtered() {
+      const q = ($("q").value || "").trim().toLowerCase();
+      return cases.filter((c) => {
+        if (cat !== "all" && c.category !== cat) return false;
+        if (!q) return true;
+        const blob = [c.title_zh, c.title_en, c.summary, c.author, c.source_url, c.notes, c.category].filter(Boolean).join(" ").toLowerCase();
+        return blob.includes(q);
+      });
+    }
+
+    function render() {
+      const t = I18N[lang];
+      const rows = filtered();
+      $("stat-total").textContent = String(cases.length);
+      $("stat-shown").textContent = String(rows.length);
+      const empty = $("empty");
+      const list = $("list");
+      list.innerHTML = "";
+      if (!rows.length) {
+        empty.hidden = false;
+        empty.textContent = t.empty;
+        return;
+      }
+      empty.hidden = true;
+      const frag = document.createDocumentFragment();
+      rows.forEach((c) => {
+        const art = document.createElement("article");
+        art.className = "card";
+        const title = lang === "en" ? (c.title_en || c.title_zh) : (c.title_zh || c.title_en);
+        const h2 = document.createElement("h2");
+        h2.textContent = title;
+        art.appendChild(h2);
+        if (c.summary) {
+          const p = document.createElement("p");
+          p.textContent = c.summary;
+          art.appendChild(p);
+        }
+        const meta = document.createElement("div");
+        meta.className = "meta";
+        const catEl = document.createElement("span");
+        catEl.className = "cat";
+        catEl.textContent = t.cats[c.category] || c.category;
+        meta.appendChild(catEl);
+        if (c.author) {
+          const a = document.createElement("span");
+          a.textContent = c.author;
+          meta.appendChild(a);
+        }
+        if (c.date) {
+          const d = document.createElement("span");
+          d.textContent = c.date;
+          meta.appendChild(d);
+        }
+        if (c.source_url) {
+          const link = document.createElement("a");
+          link.href = c.source_url;
+          link.rel = "noopener";
+          link.target = "_blank";
+          link.textContent = t.source;
+          meta.appendChild(link);
+        }
+        art.appendChild(meta);
+        if (c.notes) {
+          const n = document.createElement("p");
+          n.className = "notes";
+          n.textContent = c.notes;
+          art.appendChild(n);
+        }
+        frag.appendChild(art);
+      });
+      list.appendChild(frag);
+    }
+
+    $("lang-zh").addEventListener("click", () => { lang = "zh"; applyI18n(); });
+    $("lang-en").addEventListener("click", () => { lang = "en"; applyI18n(); });
+    $("q").addEventListener("input", render);
+
+    fetch("./cases.json")
+      .then((r) => {
+        if (!r.ok) throw new Error("cases.json " + r.status);
+        return r.json();
+      })
+      .then((data) => {
+        cases = Array.isArray(data) ? data : (data.cases || []);
+        applyI18n();
+      })
+      .catch((err) => {
+        $("empty").hidden = false;
+        $("empty").textContent = "Failed to load cases.json: " + err.message;
+      });
+  </script>
+</body>
+</html>

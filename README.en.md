@@ -4,6 +4,9 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
+Browse the [GitHub Pages catalog](https://xianyu110.github.io/awesome-gemini-4-carbon/).
+
+
 This list currently has **59** verified cases (as of 2026-11-11, Asia/Shanghai). Carbon was announced on 2026-10-28 for a subset of cybersecurity defenders and opened more widely on 2026-11-10 to paying developers, enterprises, and Google AI Ultra subscribers. Public, checkable primary cases are still accumulating. Every entry has a source URL that was actually opened; we do not invent names, numbers, or URLs.
 
 ## What the model is

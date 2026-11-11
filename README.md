@@ -4,6 +4,9 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
+浏览：[GitHub Pages 目录](https://xianyu110.github.io/awesome-gemini-4-carbon/)
+
+
 当前收录 **59** 条已核验案例（截至 2026-11-11，Asia/Shanghai）。Carbon 于 2026-10-28 面向部分网络安全防御者宣布，2026-11-10 向付费开发者、企业与 Google AI Ultra 用户更广泛开放，公开、可核验的一手案例仍在增加。本清单宁缺毋滥：每条都有实际打开过的来源链接，不编造名称、数字或网址。
 
 ## 这是什么模型
